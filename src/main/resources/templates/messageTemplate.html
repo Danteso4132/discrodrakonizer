@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Message</title>
+    <style>
+        @font-face {
+            font-family: 'ggsans';
+            src: url('fonts/ggsans-Normal.woff2') format('woff2');
+        }
+
+        body {
+            font-family: 'ggsans', Arial, sans-serif;
+            background-color: #313338;
+            color: #dcddde;
+            padding: 20px;
+            max-width: 400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center; /* Center items vertically */
+        }
+        .user-icon {
+            width: 48px;
+            height: 48px;
+            max-width: 48px;
+            max-height: 48px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .message {
+            background-color: #313338;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+            flex: 1;
+        }
+        .user-info {
+            display: flex;
+            justify-content: space-between; /* Space items evenly */
+            align-items: center; /* Center items vertically */
+            margin-bottom: 5px;
+        }
+        .user {
+            /*font-weight: bold;*/
+            font-size: 14px;
+        }
+        .date {
+            font-size: 9px;
+            font-weight: bold;
+            /*color: rgb(132, 155, 154);*/
+            color: rgb(132, 132, 150);
+        }
+    </style>
+</head>
+<body>
+<!--<img class="user-icon" src="file:///C:/Games/Java/discrodrakonizer/src/main/resources/templates/user_icon.png" alt="User Icon">-->
+<div class="message">
+    <div class="user-info">
+    <span class="user">$user</span>
+    <span class="date">$date</span>
+    </div>
+    <div>$content</div>
+</div>
+</body>
+</html>
